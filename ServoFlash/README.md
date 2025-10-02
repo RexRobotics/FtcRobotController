@@ -69,3 +69,10 @@ If you encounter issues, check:
 - That your servo is a **dual-mode goBILDA servo**
 - Consult **Kairav** for further guidance
 
+---
+
+## Source
+
+Source code from https://www.chiefdelphi.com/t/reprogramming-dual-mode-servo-using-arduino/484810
+
+Modified for easy usage, giving better consumer experience.
