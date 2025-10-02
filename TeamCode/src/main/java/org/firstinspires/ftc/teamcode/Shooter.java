@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardwareMap;
 import com.qualcomm.robotcore.digital;
 
 @TeleOp(name="Basic: Linear OpMode", group="Linear OpMode")
-public class shooter extends LinearOpMode {
+public class Shooter {
     private DcMotor shooter = null;
 
     @Override
@@ -16,6 +16,14 @@ public class shooter extends LinearOpMode {
         telemetry.addData("Shooter Status", "Initialized");
         telemetry.update();
 
-        shooter = hard
+        shooter = hardwareMap.get(DcMotor.class, "shooter");
+
+        shooter.setDirection(DcMotor.Direction.FORWARD);
+        boolean exitRequested = true;
+        double shooterPower = 0.0;
+
+        while (exitRequested) {
+            
+        } 
     }
 }
