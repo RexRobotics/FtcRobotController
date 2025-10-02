@@ -14,6 +14,7 @@ It supports switching between **Continuous (CR) mode** and **Positional (P) mode
 - **Progress bar**: Visual feedback while sending the programming sequences.
 - **Full goBILDA byte sequences** included for reliable flashing.
 - Tracks current mode (`isContinuous`) for reference.
+- **Do not disconnect the servo or Arduino** until the Serial Monitor indicates it is safe to do so.
 
 ---
 
@@ -44,3 +45,27 @@ It supports switching between **Continuous (CR) mode** and **Positional (P) mode
    - Ensure **"Newline"** or **"Both NL & CR"** is selected for line ending.
 4. Type `C` for **Continuous** mode or `P` for **Positional** mode.
 5. The console will show:
+6. Press **Enter** to confirm within the countdown.
+7. The **progress bar** will display while flashing.
+8. Wait for the Serial Monitor to indicate **"Programming complete! It is now safe to disconnect."**
+9. Repeat the process for the other mode if needed.
+
+---
+
+## Notes
+
+- Flashing takes **~2–3 seconds** per mode.
+- Do **not** disconnect the servo or Arduino until told by the Serial Monitor.
+- This sketch is intended for **FTC team use**; always follow team safety and robot rules.
+
+---
+
+## Support
+
+If you encounter issues, check:
+
+- Proper servo connection (signal, VCC, GND)
+- Correct Serial Monitor baud rate (9600)
+- That your servo is a **dual-mode goBILDA servo**
+- Consult **Kairav** for further guidance
+
