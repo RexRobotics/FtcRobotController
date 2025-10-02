@@ -75,4 +75,4 @@ If you encounter issues, check:
 
 Source code from https://www.chiefdelphi.com/t/reprogramming-dual-mode-servo-using-arduino/484810
 
-Modified for easy usage, giving better consumer experience.
+Modified for easy usage, giving better user experience.
